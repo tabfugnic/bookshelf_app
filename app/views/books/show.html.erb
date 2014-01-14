@@ -14,6 +14,12 @@
   <strong>Pages:</strong>
   <%= @book.pages %>
 </p>
+<hr />
+<h3>Notes</h3>
+
+<%= render @book.notes %>
+
+<%= render "/notes/form" %>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
